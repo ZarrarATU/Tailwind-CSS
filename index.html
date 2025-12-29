@@ -5,9 +5,59 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwind</title>
+    <style>
+       body{
+        background: #333;
+        color: white;
+       }
+
+       .main{
+        background: #111;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+       }
+
+       .card{
+        width: 100px;
+        height: 100px;
+        background: #221;
+        border: 1px solid white;
+       }
+       
+       .card7{
+        /* grid-row: 1/2; */
+        /* grid-row-start: 1;
+        grid-row-end: 1; */
+       }
+
+       .card1{
+        grid-row-start: 3;
+        grid-row-end: 4;
+       }
+       .card7{
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        grid-column-start: 3;
+        grid-column-end: 4;
+       }
+       
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+
+      <div class="main">
+        <div class="card1 card">CARD 1</div>
+        <div class="card2 card">CARD 2</div>
+        <div class="card3 card">CARD 3</div>
+        <div class="card4 card">CARD 4</div>
+        <div class="card5 card">CARD 5</div>
+        <div class="card6 card">CARD 6</div>
+        <div class="card7 card">CARD 7</div>
+        <div class="card8 card">CARD 8</div>
+      </div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
